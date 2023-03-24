@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#f6f6f6',
+                        tertiary: '#22d4fd',
+                        textHover: '#69E1FF',
+                        buttonHover: '#272727',
+                    },
+                    fontFamily: {
+                        krona: ['Krona One', 'sans-serif'],
+                        mont: ['Montserrat', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    
+</head>
+
+<body class="box-border bg-primary text-secondary text-center xl:text-start flex flex-col"> 
+    <header class="pt-12 self-center">
+        <nav class="flex gap-20">
+            <a class="font-mont text-tertiary text-2xl font-semibold hover:text-textHover" href="index.html">Home</a>
+            <a class="font-mont text-tertiary text-2xl font-semibold hover:text-textHover" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+    <main class="py-10 px-60 flex items-center justify-center gap-12 relative my-16">
+        <section class="w-auto flex flex-col gap-10">
+            <h1 class="text-4xl font-krona"> Eleve seu negócio digital a outro nível <strong class="text-tertiary"> com um Front-end de qualidade! </strong></h1>
+            <p class="text-2xl font-mont">Olá! Me chamo João Pedro Alves, sou desenvolvedor Front-end com especialidade em HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+            <div class="flex flex-col items-center gap-8 justify-between">
+                <h2 class="font-krona text-2xl">Acesse minhas redes:</h2>
+                <a class="flex justify-center gap-4 w-1/4 border-tertiary border-2 border-solid rounded-lg text-center text-2xl font-semibold py-4 gap-4 text-secondary font-mont hover:bg-buttonHover hover:scale-110 ease-in-out duration-300" href="https://www.instagram.com/uthejohandev/">
+                    <img src="./Assets/instagram.png">
+                    Instagram
+                </a>
+                <a class="flex justify-center gap-4 w-1/4 border-tertiary border-2 border-solid rounded-lg text-center text-2xl font-semibold py-4 gap-4 text-secondary font-mont hover:bg-buttonHover hover:scale-110 ease-in-out duration-300" href="https://github.com/jpalvesgoulart">
+                    <img src="./Assets/github.png">
+                    Github
+                </a>
+                <a class="flex justify-center gap-4 w-1/4 border-tertiary border-2 border-solid rounded-lg text-center text-2xl font-semibold py-4 gap-4 text-secondary font-mont hover:bg-buttonHover hover:scale-110 ease-in-out duration-300" href="https://www.linkedin.com/in/jo%C3%A3o-pedro-alves-goulart-60598920b/">
+                    <img src="./Assets/linkedin.png">
+                    Linkedin
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="p-6 text-primary bg-tertiary text-center font-mont text-2xl">
+        <p>Desenvolvido por João Pedro Alves.</p>
+    </footer>
+</body>
+
+</html>

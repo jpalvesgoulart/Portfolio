@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#f6f6f6',
+                        tertiary: '#22d4fd',
+                        textHover: '#69E1FF',
+                        buttonHover: '#272727',
+                    },
+                    fontFamily: {
+                        krona: ['Krona One', 'sans-serif'],
+                        mont: ['Montserrat', 'sans-serif']
+                    },
+                }
+            }
+        }
+    </script>
+    
+</head>
+
+<body class="box-border bg-primary text-secondary text-center xl:text-start flex flex-col"> 
+    <header class="pt-12 self-center">
+        <nav class="flex gap-20">
+            <a class="font-mont text-tertiary text-2xl font-semibold hover:text-textHover" href="index.html">Home</a>
+            <a class="font-mont text-tertiary text-2xl font-semibold hover:text-textHover" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+    <main class="py-10 xl:px-60 sm:px-4 flex items-center justify-center gap-12 relative py-24 sm:flex-col xl:flex-row">
+        <section class="w-auto flex flex-col gap-10">
+            <h1 class="text-4xl font-krona"> Sobre mim </h1>
+            <p class="text-2xl font-mont">Sou desenvolvedor web front-end em formação. Estudei <strong class="text-tertiary"> CSS, HTML e Javascript </strong>, e me especializei em tecnologias populares no mercado de trabalho, como o <strong class="text-tertiary"> Sass, Tailwind e React</strong> para maior dinamismo em minhas criações. Estou sempre buscando me aprofundar cada vez mais em meus estudos, estando sempre lado a lado com as tecnologias de grande importância no front-end.</p>
+        </section>
+        <img class="xl:w-1/2" src="./Assets/AluraBooks.svg" alt="Foto João Pedro">
+    </main>
+
+    <footer class="p-6 text-primary bg-tertiary text-center font-mont text-2xl">
+        <p>Desenvolvido por João Pedro Alves.</p>
+    </footer> 
+</body>
+</html>
